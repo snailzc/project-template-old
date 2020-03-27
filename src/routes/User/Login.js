@@ -12,7 +12,7 @@ import { redirectUrl, judgeTitle } from '../../common/menu';
 import { freashToken } from '../../services/api';
 import { resetLocal } from '../../utils/utils';
 import { getToken } from '../../utils/usertoken';
-
+const appConfig = require("../../../config/app.config.js");
 
 const { Tab, UserName, Password, Submit } = Login;
 const { confirm } = Modal;
@@ -187,7 +187,7 @@ export default class LoginPage extends Component {
       <div className={styles.main} style={{ background: `url(${bac}) no-repeat center/ cover` }}>
         <header>
           <img src={logo} alt="logo.svg" />
-          前端工程模板
+          appConfig.appName
 		    </header>
         <div className={styles.content} >
           <div className={styles.left} style={{ background: `url(${bac_left}) no-repeat center/ cover` }}></div>
