@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="icon" href="/favicon.png" type="image/x-icon">
+  <style>
+    .msgMask {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,.65);
+      height: 100%;
+      z-index: 10;
+    }
+    .msgWrapper {
+      display: none;
+      position: absolute;
+      width: 400px;
+      height: 240px;
+      top: 50%;
+      left: 50%;
+      margin-top: -120px;
+      margin-left: -200px;
+      background-color: #fff;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      z-index: 100;
+    }
+    .msgHeader {
+      padding: 16px 24px;
+      border-radius: 4px 4px 0 0;
+      background: #fff;
+      color: rgba(0,0,0,.65);
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .msgBody {
+      padding: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="msgMask" class="msgMask"></div>
+  <div id="browserMsg" class="msgWrapper">
+    <h4 class="msgHeader">温馨提示：</h4>
+    <div class="msgBody">
+      <p>您当前使用的<span id="msgContent"></span>浏览器，为了更好的体验，请您使用Chrome浏览器。</p>
+
+    </div>
+  </div>
+  <div id="root">
+  </div>
+  <script>
+    function browserVersion() {
+      var userAgent = navigator.userAgent.toLocaleLowerCase();
+      var isIE = userAgent.indexOf('compatible') !== -1 && userAgent.indexOf('msie') !== -1;
+      var isEdge = userAgent.indexOf('dege') !== -1 && !isIE;
+      var isIE11 = userAgent.indexOf('trident') !== -1 && userAgent.indexOf('rv:11.0') !== -1;
+      var isFF = userAgent.indexOf('firefox') !== -1;
+      var isChrome = userAgent.indexOf('chrome') !== -1;
+      var qqBrowser = userAgent.indexOf('qqbrowser') !== -1;
+      var is360 = _mime("type", "application/vnd.chromium.remoting-viewer");
+      var android = userAgent.indexOf('android') > -1;
+      if (!android) {
+        if (isIE) {
+          var reIE = new RegExp('MSIE (\\d+\\.\\d+);');
+          reIE.test(userAgent);
+          var fIEVersion = parseFloat(RegExp['$1']);
+          if (fIEVersion === 7) {
+            return 'IE7';
+          } else if (fIEVersion === 8) {
+            return 'IE8';
+          } else if (fIEVersion === 9) {
+            return 'IE9';
+          } else if (fIEVersion === 10) {
+            return 'IE10';
+          } else {
+            return 'IE';
+          }
+        } else if(isIE11) {
+          return 'IE11';
+        } else if(isEdge) {
+          return 'edge';
+        } else if (qqBrowser) {
+          return 'QQ'
+        } else if (isFF) {
+          return '火狐'
+        } else if (is360) {
+          return '360';
+        }
+      }
+    };
+
+    //检测是否是谷歌内核(可排除360及谷歌以外的浏览器)
+    //测试mime
+    function _mime(option, value) {
+        var mimeTypes = navigator.mimeTypes && navigator.mimeTypes;
+        for (var mt in mimeTypes) {
+            if (mimeTypes[mt][option] == value) {
+                return true;
+            }
+        }
+        return false;
+    }
+    var msg = document.getElementById('browserMsg');
+    var msgContent = document.getElementById('msgContent');
+    var msgMask = document.getElementById('msgMask');
+    var curBrowser = browserVersion();
+    if(curBrowser) {
+      msg.style.display = 'block';
+      msgMask.style.display = 'block';
+      msgContent.innerHTML = curBrowser;
+    }
+  </script>
+</body>
+</html>

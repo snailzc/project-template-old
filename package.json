@@ -1,0 +1,148 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "private": true,
+  "author": "snail",
+  "scripts": {
+    "start": "cross-env PORT=8000 ESLINT=none API_ENV=dev roadhog dev",
+    "start:local": "cross-env PORT=8000 ESLINT=none API_ENV=local roadhog dev",
+    "start:no-proxy": "cross-env PORT=8000 NO_PROXY=true roadhogs dev",
+    "build": "cross-env ESLINT=none API_ENV=test roadhog build",
+    "build:test": "cross-env ESLINT=none API_ENV=test roadhog build",
+    "build:dev": "cross-env ESLINT=none API_ENV=dev roadhog build",
+    "build:pro": "cross-env ESLINT=none API_ENV=pro roadhog build",
+    "site": "roadhog-api-doc static && gh-pages -d dist",
+    "analyze": "cross-env ESLINT=none roadhog build --analyze",
+    "lint:style": "stylelint \"src/**/*.less\" --syntax less",
+    "lint": "eslint --ext .js src mock tests && npm run lint:style",
+    "lint:fix": "eslint --fix src",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js",
+    "test": "jest",
+    "test:comps": "jest ./src/components",
+    "test:all": "node ./tests/run-tests.js",
+    "fix-memory-limit": "cross-env LIMIT=4048 increase-memory-limit"
+  },
+  "dependencies": {
+    "@antv/data-set": "^0.8.0",
+    "@babel/core": "^7.0.0-beta.53",
+    "@babel/polyfill": "^7.0.0-beta.36",
+    "antd": "^3.10.3",
+    "axios": "^0.18.0",
+    "babel-runtime": "^6.9.2",
+    "bizcharts": "^3.1.0-beta.4",
+    "bizcharts-plugin-slider": "^2.0.1",
+    "classnames": "^2.2.5",
+    "draftjs-to-html": "^0.8.4",
+    "dva": "^2.1.0",
+    "dva-loading": "^1.0.4",
+    "echarts": "^4.2.0-rc.2",
+    "echarts-for-react": "^2.0.15-beta.0",
+    "enquire-js": "^0.1.1",
+    "fastclick": "^1.0.6",
+    "history": "^4.7.2",
+    "html-to-draftjs": "^1.4.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.11",
+    "lodash-decorators": "^4.4.1",
+    "moment": "^2.22.2",
+    "numeral": "^2.0.6",
+    "omit.js": "^1.0.0",
+    "qrcode-react": "^0.1.16",
+    "qs": "^6.5.0",
+    "query-string": "^6.2.0",
+    "rc-drawer-menu": "^0.5.0",
+    "react": "^16.6.0",
+    "react-amap": "^1.2.7",
+    "react-container-query": "^0.9.1",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.6.0",
+    "react-draft-wysiwyg": "^1.12.13",
+    "react-fittext": "^1.0.0",
+    "react-viewer": "^2.8.0",
+    "socket.io-client": "^2.1.0",
+    "stompjs": "^2.3.3",
+    "wangeditor": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "@babel/preset-react": "^7.0.0-beta.36",
+    "babel-eslint": "^8.1.2",
+    "babel-helpers": "^6.24.1",
+    "babel-jest": "^22.0.4",
+    "babel-plugin-dva-hmr": "^0.4.1",
+    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "cross-port-killer": "^1.0.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-compat": "^2.2.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "eslint-plugin-react": "^7.5.1",
+    "gh-pages": "^1.0.0",
+    "husky": "^0.14.3",
+    "increase-memory-limit": "^1.0.6",
+    "jest": "^22.0.4",
+    "jsdom": "^11.5.1",
+    "lint-staged": "^6.0.0",
+    "mockjs": "^1.0.1-beta3",
+    "pro-download": "^1.0.1",
+    "prop-types": "^15.6.2",
+    "react-test-renderer": "^16.2.0",
+    "redbox-react": "^1.5.0",
+    "reqwest": "^2.0.5",
+    "roadhog": "^2.5.0-beta.1",
+    "roadhog-api-doc": "^1.1.2",
+    "rollbar": "^2.3.4",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0"
+  },
+  "optionalDependencies": {
+    "nightmare": "^2.10.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "@babel/plugin-proposal-pipeline-operator",
+      {
+        "proposal": "minimal"
+      }
+    ]
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/tests/setupTests.js"
+    ],
+    "testMatch": [
+      "**/?(*.)(spec|test|e2e).js?(x)"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/jasmine.js",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/tests/styleMock.js"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": "lint-staged:js",
+    "**/*.less": "stylelint --syntax less"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}

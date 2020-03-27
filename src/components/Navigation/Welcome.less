@@ -1,0 +1,126 @@
+.body {
+  width: 98%;
+  background-color: #f2f3f5;
+  //padding: 16px;
+}
+
+.card {
+  padding-bottom: 10px;
+}
+
+.device {
+  background-color: #fff;
+  margin-bottom: 10px;
+  > div {
+    .clickNum{
+      cursor: pointer;
+    }
+    &:nth-of-type(1) {
+      padding: 10px 20px 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      >span {
+        &:last-of-type {
+          color: #aaa;
+          font-size: 12px;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 16px 0;
+      p {
+        &:hover {
+          span {
+            color: #396FFF;
+          }
+        }
+        display: flex;
+        flex: 1;
+        margin: 0;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        span {
+          text-align: center;
+          font-size: 13px;
+          &:last-of-type {
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+.chart {
+  background-color: #fff;
+  margin-bottom: 10px;
+  > div {
+    &:nth-of-type(1) {
+      padding: 10px 20px 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      >span {
+        &:last-of-type {
+          color: #aaa;
+          font-size: 12px;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      >div {
+        &:first-of-type {
+          display: flex;
+          align-items: center;
+          height: 40px;
+          :global {
+            .ant-select {
+              margin-left: 45px;
+              margin-right: 40px;
+              .ant-select-selection--single  {
+                border: 0 !important;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: #666;
+  transform: translateY(-40px);
+  span {
+    cursor: pointer;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #eee;
+      margin-left: 10px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+  :global {
+    .active {
+      &::before {
+        background-color: #396FFF !important;
+      }
+    }
+  }
+}

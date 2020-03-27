@@ -1,0 +1,55 @@
+@import "~antd/lib/style/themes/default.less";
+
+.main {
+  //width: 368px;
+  margin: 0 auto;
+
+  .tabs {
+    padding: 0 2px;
+    margin: 0 -2px;
+    color: #fff;
+    :global {
+      .ant-tabs-tab {
+        font-size: 16px;
+        padding: 0;
+        &.ant-tabs-tab-active {
+          color: rgb(228, 57, 60);
+        }
+      }
+
+      .ant-tabs-ink-bar {
+        background: rgb(228, 57, 60);
+      }
+
+      .ant-input-affix-wrapper .ant-input:not(:first-child) {
+        padding-left: 34px;
+      }
+    }
+  }
+
+  :global {
+    .ant-tabs .ant-tabs-bar {
+      border-bottom: 0;
+      text-align: center;
+    }
+
+    .ant-form-item {
+      margin-bottom: 8px !important;
+    }
+  }
+
+  .prefixIcon {
+    font-size: @font-size-base;
+    color: @disabled-color;
+  }
+
+  .getCaptcha {
+    display: block;
+    width: 100%;
+  }
+
+  .submit {
+    width: 100%;
+    margin-top: 24px;
+  }
+}

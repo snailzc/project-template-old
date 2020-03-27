@@ -1,0 +1,29 @@
+.editableTable {
+  //margin: 20px 0;
+
+  .tableButton {
+    float: right;
+  }
+  .editableRow {
+    min-height: 45px;
+
+    :global {
+      .ant-form-item {
+        min-height: 0 !important;
+      }
+    }
+  }
+
+  :global {
+    .ant-empty-normal {
+      margin: 0 !important;
+    }
+    .ant-empty-normal .ant-empty-image {
+      height: 0;
+    }
+    .ant-table-title {
+      padding: 10px 0;
+      //background-color: #29aae8;
+    }
+  }
+}

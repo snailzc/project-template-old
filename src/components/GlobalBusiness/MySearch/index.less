@@ -1,0 +1,108 @@
+.main {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  .search {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+
+    .formItem {
+      margin-right: 14px;
+      margin-bottom: 0;
+      min-height: 46px;
+      display: flex;
+      align-items: center;
+      // :global {
+      //   .ant-form-item-control-wrapper {
+      //     width: 100%;
+      //     .ant-form-item-control {
+      //       width: 100%;
+      //       .ant-form-item-children {
+      //         width: 100%;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+    .searchButton {
+      flex: 0 0 155px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: auto;
+
+      .button {
+        background: #fff;
+        border-color: #37b1eb;
+        color: #333;
+        padding: 0 10px !important;
+        margin-right: 10px;
+        &:hover {
+          background: #37B1EB;
+          color: #fff;
+          border-color: #37b1eb;
+        }
+      }
+      .resetButton{
+        border-color: #37B1EB !important;
+        padding: 0 10px !important;
+        &:hover{
+          background: #37B1EB;
+          color: #fff !important;
+          border-color: #37B1EB !important;
+        }
+      }
+      .expandIcon{
+        margin-left: 5px;
+      }
+    }
+    :global {
+      .ant-radio-group{
+        border: 1px solid #d9d9d9;
+        height: 32px !important;
+        line-height: 30px !important;
+        border-radius: 4px;
+        padding-left: 7px;
+        .ant-radio-wrapper{
+          margin-right: 0px !important;
+        }
+      }
+      .ant-select-selection{
+        .ant-select-arrow{
+          background: #1890ff;
+          color: #fff;
+          width: 20px;
+          height: 30px;
+          position: absolute;
+          top: 6px;
+          right: 0;
+          border-radius: 0 4px 4px 0;
+          .anticon{
+            font-size: 12px !important;
+            height: 30px;
+            line-height: 33px;
+            svg{
+              font-size: 12px !important;
+            }
+          }
+        }
+        .ant-select-selection__clear{
+          position: absolute;
+          right: 22px;
+          top: 14px;
+          // background: #fff;
+          // border-radius: 50%;
+          .anticon{
+            font-size: 12px !important;
+            svg{
+              font-size: 12px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .hideExpand {
+    display: none;
+  }
+}

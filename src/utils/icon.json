@@ -1,0 +1,578 @@
+[
+  {
+    "value": "lock",
+    "key": "lock"
+  },
+  {
+    "value": "unlock",
+    "key": "unlock"
+  },
+  {
+    "value": "wajueji01",
+    "key": "wajueji01"
+  },
+  {
+    "value": "rizhi",
+    "key": "rizhi"
+  },
+  {
+    "value": "huanbao",
+    "key": "huanbao"
+  },
+  {
+    "value": "rizhiguanli",
+    "key": "rizhiguanli"
+  },
+  {
+    "value": "cycle",
+    "key": "cycle"
+  },
+  {
+    "value": "guanwangxitong",
+    "key": "guanwangxitong"
+  },
+  {
+    "value": "icon-p_mrpjinduzhuizong",
+    "key": "icon-p_mrpjinduzhuizong"
+  },
+  {
+    "value": "shipinshengchanqiye",
+    "key": "shipinshengchanqiye"
+  },
+  {
+    "value": "book",
+    "key": "book"
+  },
+  {
+    "value": "bars",
+    "key": "bars"
+  },
+  {
+    "value": "area-chart",
+    "key": "area-chart"
+  },
+  {
+    "value": "pie-chart",
+    "key": "pie-chart"
+  },
+  {
+    "value": "bar-chart",
+    "key": "bar-chart"
+  },
+  {
+    "value": "dot-chart",
+    "key": "dot-chart"
+  },
+  {
+    "value": "calendar",
+    "key": "calendar"
+  },
+  {
+    "value": "cloud",
+    "key": "cloud"
+  },
+  {
+    "value": "cloud-download",
+    "key": "cloud-download"
+  },
+  {
+    "value": "code",
+    "key": "code"
+  },
+  {
+    "value": "code-o",
+    "key": "code-o"
+  },
+  {
+    "value": "copy",
+    "key": "copy"
+  },
+  {
+    "value": "credit-card",
+    "key": "credit-card"
+  },
+  {
+    "value": "delete",
+    "key": "delete"
+  },
+  {
+    "value": "desktop",
+    "key": "desktop"
+  },
+  {
+    "value": "download",
+    "key": "download"
+  },
+  {
+    "value": "edit",
+    "key": "edit"
+  },
+  {
+    "value": "ellipsis",
+    "key": "ellipsis"
+  },
+  {
+    "value": "file",
+    "key": "file"
+  },
+  {
+    "value": "file-text",
+    "key": "file-text"
+  },
+  {
+    "value": "file-unknown",
+    "key": "file-unknown"
+  },
+  {
+    "value": "file-pdf",
+    "key": "file-pdf"
+  },
+  {
+    "value": "file-word",
+    "key": "file-word"
+  },
+  {
+    "value": "file-excel",
+    "key": "file-excel"
+  },
+  {
+    "value": "file-jpg",
+    "key": "file-jpg"
+  },
+  {
+    "value": "file-ppt",
+    "key": "file-ppt"
+  },
+  {
+    "value": "file-add",
+    "key": "file-add"
+  },
+  {
+    "value": "folder",
+    "key": "folder"
+  },
+  {
+    "value": "folder-open",
+    "key": "folder-open"
+  },
+  {
+    "value": "folder-add",
+    "key": "folder-add"
+  },
+  {
+    "value": "hdd",
+    "key": "hdd"
+  },
+  {
+    "value": "frown",
+    "key": "frown"
+  },
+  {
+    "value": "frown-o",
+    "key": "frown-o"
+  },
+  {
+    "value": "meh",
+    "key": "meh"
+  },
+  {
+    "value": "meh-o",
+    "key": "meh-o"
+  },
+  {
+    "value": "smile",
+    "key": "smile"
+  },
+  {
+    "value": "smile-o",
+    "key": "smile-o"
+  },
+  {
+    "value": "inbox",
+    "key": "inbox"
+  },
+  {
+    "value": "laptop",
+    "key": "laptop"
+  },
+  {
+    "value": "appstore-o",
+    "key": "appstore-o"
+  },
+  {
+    "value": "appstore",
+    "key": "appstore"
+  },
+  {
+    "value": "line-chart",
+    "key": "line-chart"
+  },
+  {
+    "value": "link",
+    "key": "link"
+  },
+  {
+    "value": "mobile",
+    "key": "mobile"
+  },
+  {
+    "value": "mail",
+    "key": "mail"
+  },
+  {
+    "value": "notifaction",
+    "key": "notifaction"
+  },
+  {
+    "value": "paper-clip",
+    "key": "paper-clip"
+  },
+  {
+    "value": "picture",
+    "key": "picture"
+  },
+  {
+    "value": "power-off",
+    "key": "power-off"
+  },
+  {
+    "value": "reload",
+    "key": "reload"
+  },
+  {
+    "value": "search",
+    "key": "search"
+  },
+  {
+    "value": "setting",
+    "key": "setting"
+  },
+  {
+    "value": "share-alt",
+    "key": "share-alt"
+  },
+  {
+    "value": "shopping-cart",
+    "key": "shopping-cart"
+  },
+  {
+    "value": "tablet",
+    "key": "tablet"
+  },
+  {
+    "value": "tag",
+    "key": "tag"
+  },
+  {
+    "value": "tag-o",
+    "key": "tag-o"
+  },
+  {
+    "value": "tags",
+    "key": "tags"
+  },
+  {
+    "value": "tags-o",
+    "key": "tags-o"
+  },
+  {
+    "value": "to-top",
+    "key": "to-top"
+  },
+  {
+    "value": "user",
+    "key": "user"
+  },
+  {
+    "value": "video-camera",
+    "key": "video-camera"
+  },
+  {
+    "value": "home",
+    "key": "home"
+  },
+  {
+    "value": "loading",
+    "key": "loading"
+  },
+  {
+    "value": "star-o",
+    "key": "star-o"
+  },
+  {
+    "value": "star",
+    "key": "star"
+  },
+  {
+    "value": "heart",
+    "key": "heart"
+  },
+  {
+    "value": "heart-o",
+    "key": "heart-o"
+  },
+  {
+    "value": "environment",
+    "key": "environment"
+  },
+  {
+    "value": "environment-o",
+    "key": "environment-o"
+  },
+  {
+    "value": "eye",
+    "key": "eye"
+  },
+  {
+    "value": "eye-o",
+    "key": "eye-o"
+  },
+  {
+    "value": "camera",
+    "key": "camera"
+  },
+  {
+    "value": "camera-o",
+    "key": "camera-o"
+  },
+  {
+    "value": "save",
+    "key": "save"
+  },
+  {
+    "value": "team",
+    "key": "team"
+  },
+  {
+    "value": "solution",
+    "key": "solution"
+  },
+  {
+    "value": "phone",
+    "key": "phone"
+  },
+  {
+    "value": "filter",
+    "key": "filter"
+  },
+  {
+    "value": "exception",
+    "key": "exception"
+  },
+  {
+    "value": "export",
+    "key": "export"
+  },
+  {
+    "value": "customer-service",
+    "key": "customer-service"
+  },
+  {
+    "value": "qrcode",
+    "key": "qrcode"
+  },
+  {
+    "value": "scan",
+    "key": "scan"
+  },
+  {
+    "value": "like",
+    "key": "like"
+  },
+  {
+    "value": "dislike",
+    "key": "dislike"
+  },
+  {
+    "value": "like-o",
+    "key": "like-o"
+  },
+  {
+    "value": "dislike-o",
+    "key": "dislike-o"
+  },
+  {
+    "value": "message",
+    "key": "message"
+  },
+  {
+    "value": "pay-circle",
+    "key": "pay-circle"
+  },
+  {
+    "value": "pay-circle-o",
+    "key": "pay-circle-o"
+  },
+  {
+    "value": "calculator",
+    "key": "calculator"
+  },
+  {
+    "value": "pushpin",
+    "key": "pushpin"
+  },
+  {
+    "value": "pushpin-o",
+    "key": "pushpin-o"
+  },
+  {
+    "value": "bulb",
+    "key": "bulb"
+  },
+  {
+    "value": "select",
+    "key": "select"
+  },
+  {
+    "value": "switcher",
+    "key": "switcher"
+  },
+  {
+    "value": "rocket",
+    "key": "rocket"
+  },
+  {
+    "value": "bell",
+    "key": "bell"
+  },
+  {
+    "value": "disconnect",
+    "key": "disconnect"
+  },
+  {
+    "value": "database",
+    "key": "database"
+  },
+  {
+    "value": "compass",
+    "key": "compass"
+  },
+  {
+    "value": "barcode",
+    "key": "barcode"
+  },
+  {
+    "value": "key",
+    "key": "key"
+  },
+  {
+    "value": "flag",
+    "key": "flag"
+  },
+  {
+    "value": "layout",
+    "key": "layout"
+  },
+  {
+    "value": "printer",
+    "key": "printer"
+  },
+  {
+    "value": "sound",
+    "key": "sound"
+  },
+  {
+    "value": "usb",
+    "key": "usb"
+  },
+  {
+    "value": "skin",
+    "key": "skin"
+  },
+  {
+    "value": "tool",
+    "key": "tool"
+  },
+  {
+    "value": "sync",
+    "key": "sync"
+  },
+  {
+    "value": "wifi",
+    "key": "wifi"
+  },
+  {
+    "value": "car",
+    "key": "car"
+  },
+  {
+    "value": "user-add",
+    "key": "user-add"
+  },
+  {
+    "value": "user-delete",
+    "key": "user-delete"
+  },
+  {
+    "value": "profile",
+    "key": "profile"
+  },
+  {
+    "value": "dashboard",
+    "key": "dashboard"
+  },
+  {
+    "value": "form",
+    "key": "form"
+  },
+  {
+    "value": "table",
+    "key": "table"
+  },
+  {
+    "value": "safety",
+    "key": "safety"
+  },
+  {
+    "value": "wallet",
+    "key": "wallet"
+  },
+  {
+    "value": "bank",
+    "key": "bank"
+  },
+  {
+    "value": "contacts",
+    "key": "contacts"
+  },
+  {
+    "value": "copyright",
+    "key": "copyright"
+  },
+  {
+    "value": "trademark",
+    "key": "trademark"
+  },
+  {
+    "value": "idcard",
+    "key": "idcard"
+  },
+  {
+    "value": "gift",
+    "key": "gift"
+  },
+  {
+    "value": "jichuziliao",
+    "key": "jichuziliao"
+  },
+  {
+    "value": "zhuqunguanli",
+    "key": "zhuqunguanli"
+  },
+  {
+    "value": "shujujiekou",
+    "key": "shujujiekou"
+  },
+  {
+    "value": "zhongzhuguanli",
+    "key": "zhongzhuguanli"
+  },
+  {
+    "value": "zhuchangkeshihua",
+    "key": "zhuchangkeshihua"
+  },
+  {
+    "value": "jichushezhi1",
+    "key": "jichushezhi1"
+  }
+]

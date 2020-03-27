@@ -1,0 +1,268 @@
+@orangeColor: #007acc;
+// 表头颜色 #7bb7ef
+@tableTh: #d8e7f7;
+// 表文字颜色
+@tableTextColor: #666;
+// 奇数行背景颜色
+@tableOddRowColor: #f9f9f9;
+// 共用颜色
+.orangeColor {
+  color: #007acc;
+}
+// 公用表格样式
+.standardTable(@top: 0px) {
+  position: absolute;
+  top: @top;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  .associatedBtn {
+    position: absolute;
+    right: 44px;
+    border-radius: 3px;
+    background-color: #37B1EB !important;
+    border-color: #37B1EB !important;
+    z-index: 10;
+  }
+  /**overflow-y: scroll;**/
+  :global {
+    .letter-overflow {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      text-align: center;
+    }
+    .ant-table {
+      height: 100%;
+      top: 28px;
+      overflow-x: scroll;
+      table {
+        text-align: center;
+      }
+    }
+    /**兼容Firefox、IE表头**/
+    .ant-table-header {
+      margin-bottom: 0 !important;
+    }
+    .ant-table-body {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      bottom: 27px;
+    }
+    .ant-table-pagination {
+      position: absolute;
+      top: 0;
+      right: 44px;
+      margin: 0 !important;
+    }
+    .ant-table-wrapper {
+      height: 100%;
+      .ant-spin-nested-loading {
+        height: 100%;
+        .ant-spin-container {
+          height: 100%;
+        }
+      }
+    }
+    table tr.tableCss td {
+      background: @tableOddRowColor;
+    }
+    table tr.tableOrangeRed td {
+      background: orange;
+    }
+    table tr.red td {
+      background: #ec03035c;
+    }
+
+    .ant-table-thead > tr.ant-table-row-hover > td,
+    .ant-table-tbody > tr.ant-table-row-hover > td,
+    .ant-table-thead > tr:hover > td,
+    .ant-table-tbody > tr:hover > td {
+      background: #c9e0ea;
+    }
+
+    .ant-table-column-sorter {
+      margin-left: 0;
+      margin-top: -4px;
+      width: 14px;
+      height: 14px;
+    }
+    table th {
+      background: @tableTh !important;
+      text-align: center !important;
+      color: white !important;
+      border-right: #dce1ed !important;
+      font-size: 14px !important;
+      height: 40px !important;
+    }
+    table td {
+      color: @tableTextColor !important;
+      border-right-color: #e1e7ed !important;
+    }
+    table tr .ant-table-selection-column {
+      width: 30px;
+    }
+    .addBtn,
+    .checkBtn,
+    .uncheckBtn,
+    .publishBtn,
+    .unpublishBtn {
+      position: absolute;
+      border-radius: 3px;
+      background-color: #40c8a5 !important;
+      border-color: #40c8a5 !important;
+      z-index: 10;
+    }
+    .addBtn {
+      left: 44px;
+    }
+    .checkBtn {
+      left: 124px;
+    }
+    .uncheckBtn {
+      left: 184px;
+    }
+    .publishBtn {
+      left: 268px;
+    }
+    .unpublishBtn {
+      left: 328px;
+    }
+  }
+
+  .tableAlert {
+    margin-bottom: 16px;
+  }
+  .grayItem {
+    width: 100%;
+    height: 10px;
+    background-color: #f0f3fa;
+    margin-bottom: 6px;
+  }
+}
+
+// 公用textArea
+.globalTextArea(@height: 48px) {
+  height: @height;
+}
+.globalTableLink {
+  color: #76b1cb;
+}
+
+// 定制化样式
+// 公用按钮
+.globalBtn(@color: #1890ff, @fontColor: #fff) {
+  background: @color;
+  border-color: #37b1eb;
+  color: @fontColor;
+  &:hover {
+    background: #37b1eb;
+    color: #fff;
+    border-color: #37b1eb;
+  }
+}
+
+// 搜索表单专用
+.normalSearchForm(@padding:0 44px ) {
+  position: relative;
+  padding: @padding !important;
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+      ::after {
+        content: '';
+      }
+    }
+    .ant-calendar-picker {
+      width: 100% !important;
+    }
+    /**.ant-select {
+      display: inline;
+    }**/
+    .ant-form-item-control {
+      line-height: 1;
+    }
+    .ant-btn-sm {
+      /**width: 3.1vw;**/
+      /**height: 1.87vw;**/
+      line-height: 1;
+      border-radius: 3px;
+    }
+    /**.ant-btn-plus-margin {
+      margin-right: 20px;
+    }**/
+    .ant-form-item-label label:after {
+      content: '';
+    }
+    .ant-form label {
+      font-size: 14px;
+      color: #8896a1;
+      font-family: 'Microsoft YaHei';
+      font-weight: bold;
+    }
+    .ant-form-item-label {
+      height: 26px !important;
+      vertical-align: middle;
+      line-height: 26px !important;
+      margin-top: 2px;
+      font-size: 14px;
+      color: #8896a1;
+      font-family: 'Microsoft YaHei';
+      font-weight: bold;
+    }
+    .ant-form-item {
+      margin-right: 20px;
+      min-height: auto;
+    }
+    .ant-form-item-label label {
+      color: #8896a1;
+      font-family: 'Microsoft YaHei';
+      font-weight: bold;
+    }
+  }
+}
+
+// 公用轮播图样式
+.previewContent {
+  :global {
+    .ant-carousel {
+      width: 100%;
+      .slick-slide {
+        text-align: center;
+        height: 100%;
+        line-height: 100%;
+        background: aliceblue;
+        // background: #364d79;
+        overflow: hidden;
+        max-height: 420px;
+        h3 {
+          color: #237fdd;
+        }
+      }
+      .slick-dots {
+        // background: #6093f2;
+        .slick-active {
+          color: #237fdd;
+        }
+        li {
+          button {
+            width: 35px;
+            color: #237fdd;
+            background: #237fdd;
+            padding: 2px 0;
+          }
+          &.slick-active button {
+            width: 48px;
+            color: #237fdd;
+            background: #237fdd;
+          }
+        }
+      }
+    }
+  }
+}

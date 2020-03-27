@@ -1,0 +1,72 @@
+@import "~antd/lib/style/themes/default.less";
+.standardTable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /** overflow: hidden;**/
+  z-index: 1;
+  /**overflow-y: scroll;**/
+  :global {
+
+    .letter-overflow {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .ant-table {
+      height: 100%;
+    }
+    /**兼容Firefox、IE表头**/
+    .ant-table-header {
+      margin-bottom: 0 !important;
+    }
+    .ant-table-body {
+      position: absolute!important;
+      top: 32px;
+      left: 0;
+      right: 0;
+      bottom: 27px;
+    }
+    .ant-table-pagination {
+      position: absolute;
+      bottom: 4px;
+      right: 0;
+      margin: 0!important;
+    }
+    .ant-table-wrapper {
+      height: 100%;
+      .ant-spin-nested-loading {
+        height: 100%;
+        .ant-spin-container {
+          height: 100%;
+        }
+      }
+    }
+    table tr.tableCss td {
+      background: #f9f9f9;
+    }
+    table tr.tableOrangeRed td {
+      background: orange;
+    }
+    table tr.red td {
+      background: #ec03035c;
+    }
+
+    .ant-table-thead > tr.ant-table-row-hover > td, .ant-table-tbody > tr.ant-table-row-hover > td, .ant-table-thead > tr:hover > td, .ant-table-tbody > tr:hover > td {
+      background: rgb(226, 239, 250);
+    }
+
+    .ant-table-column-sorter {
+      margin-left: 0;
+      margin-top: -4px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .tableAlert {
+    margin-bottom: 16px;
+  }
+}

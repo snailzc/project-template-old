@@ -1,0 +1,71 @@
+.orangeColor {
+  color: #007acc;
+}
+.globalTableLink {
+  color: #76b1cb;
+}
+.previewContent :global .ant-carousel {
+  width: 100%;
+}
+.previewContent :global .ant-carousel .slick-slide {
+  text-align: center;
+  height: 100%;
+  line-height: 100%;
+  background: aliceblue;
+  overflow: hidden;
+  max-height: 390px;
+}
+.previewContent :global .ant-carousel .slick-slide h3 {
+  color: #237fdd;
+}
+.previewContent :global .ant-carousel .slick-dots .slick-active {
+  color: #237fdd;
+}
+.previewContent :global .ant-carousel .slick-dots li button {
+  width: 35px;
+  color: #237fdd;
+  background: #237fdd;
+  padding: 2px 0;
+}
+.previewContent :global .ant-carousel .slick-dots li.slick-active button {
+  width: 48px;
+  color: #237fdd;
+  background: #237fdd;
+}
+.main {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  flex-flow: row wrap;
+}
+.main .formItem {
+  margin-right: 14px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+}
+/*.main .formItem :global .ant-form-item-control-wrapper {
+  width: 100%;
+}
+.main .formItem :global .ant-form-item-control-wrapper .ant-form-item-control {
+  width: 100%;
+}
+.main .formItem :global .ant-form-item-control-wrapper .ant-form-item-control .ant-form-item-children {
+  width: 100%;
+}*/
+.main .searchButton {
+  flex: 0 0 140px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+.main .searchButton .button {
+  background: #37b1eb;
+  border-color: #37b1eb;
+  color: #fff;
+}
+.main .searchButton .button:hover {
+  background: #37b1eb;
+  color: #fff;
+  border-color: #37b1eb;
+}
