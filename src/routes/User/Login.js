@@ -187,7 +187,7 @@ export default class LoginPage extends Component {
       <div className={styles.main} style={{ background: `url(${bac}) no-repeat center/ cover` }}>
         <header>
           <img src={logo} alt="logo.svg" />
-          appConfig.appName
+          {appConfig.appName}
 		    </header>
         <div className={styles.content} >
           <div className={styles.left} style={{ background: `url(${bac_left}) no-repeat center/ cover` }}></div>
