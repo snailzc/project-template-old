@@ -1,5 +1,4 @@
 const path = require("path");
-const target = require("./config/app.config.js").targetServer;
 
 export default {
   "entry": "./src/index.js",
@@ -31,7 +30,7 @@ export default {
   "proxy": {
     "/": {
       "changeOrigin": true,
-      "target": target,
+      "target":  'http://10.106.11.110:31000',
       "pathRewrite": { "^": "" }
     }
   },
