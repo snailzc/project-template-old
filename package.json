@@ -1,6 +1,7 @@
 {
   "name": "project-template",
   "version": "1.0.0",
+  "description": "project-template",
   "private": true,
   "author": "snail",
   "scripts": {
